@@ -1,6 +1,7 @@
 const express = require("express");
 let router = express.Router();
 var bcrypt = require("bcryptjs");
+const _ = require("lodash");
 let { User } = require("../../models/user");
 router.post("/register", async (req, res) => {
   let user = await User.findOne({ email: req.body.email });
@@ -12,7 +13,15 @@ router.post("/register", async (req, res) => {
   let salt = await bcrypt.genSalt(10);
   user.password = await bcrypt.hash(user.password, salt);
   await user.save();
-  res.send(user);
+  return res.send(_.pick(user, ["name", "email"]));
+});
+
+router.post("/login", async (req, res) => {
+  let user = await User.findOne({ email: req.body.email });
+  if (!user) return res.status(400).send("User not registered");
+  let isValid = await bcrypt.compare(req.body.password, user.password);
+  if (!isValid) return res.status(401).send("invalid password");
+  res.send("Logged in successfully");
 });
 
 module.exports = router;

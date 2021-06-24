@@ -1,0 +1,45 @@
+nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+    a.navbar-brand(href='/') Acotar Fandom
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item.active
+          a.nav-link(href='/') Home
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown')
+            | Books
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='/acotar') Acotar
+            .dropdown-divider
+            a.dropdown-item(href='/acomaf') Acomaf
+            .dropdown-divider
+            a.dropdown-item(href='/acowar') Acowar
+            .dropdown-divider
+            a.dropdown-item(href='/acofas') Acofas
+            .dropdown-divider
+            a.dropdown-item(href='/acosf') Acosf
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle(href='' role='button' data-toggle='dropdown')
+            | Characters
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='/rhysand') Rhsyand
+            .dropdown-divider
+            a.dropdown-item(href='/feyre') Feyre
+            .dropdown-divider
+            a.dropdown-item(href='/cassian') Cassian
+            .dropdown-divider
+            a.dropdown-item(href='/azriel') Azriel
+            .dropdown-divider
+            a.dropdown-item(href='/nesta') Nesta
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle(href='' role='button' data-toggle='dropdown')
+            | Locations
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='/prythian') Prythian
+            .dropdown-divider
+            a.dropdown-item(href='/velaris') Velaris
+            .dropdown-divider
+            a.dropdown-item(href='/mountain') Under the Mountain
+            .dropdown-divider
+            a.dropdown-item(href='/hybern') Hybern

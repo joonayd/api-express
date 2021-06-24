@@ -1,0 +1,274 @@
+body {
+  background-image: url(.././images/space.jpg);
+}
+#menu {
+  padding: 0px;
+  text-align: right;
+  position: sticky;
+  top: 0;
+}
+#title {
+  font-size: 2em;
+  color: silver;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+#aboutauthor {
+  border: 2px solid yellowgreen;
+  background-color: black;
+  max-width: 900px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.wrapper {
+  background-color: black;
+  margin: 0 auto;
+  border: 2px solid black;
+  width: 700px;
+}
+.wrapperHeadings {
+  text-align: center;
+  color: white;
+}
+.wrapper p {
+  color: white;
+  margin: 5px;
+  padding: 20px;
+}
+.Heading {
+  text-align: center;
+}
+.resize {
+  width: 300px;
+  height: 40px;
+}
+.mainHeading h1 {
+  margin: 5px;
+  padding: 20px;
+  color: red;
+  border-bottom: 1px solid white;
+}
+.flex-container-books {
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.books h3 {
+  text-align: center;
+  color: white;
+  font-family: luminari;
+}
+.books img {
+  width: 175px;
+  height: 300px;
+}
+.container p {
+  text-align: center;
+}
+.flex-container-categories {
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.categories img {
+  width: 175px;
+  height: 250px;
+}
+.characters img {
+  width: 175px;
+  height: 200px;
+}
+.flex-container-characters {
+  display: flex;
+  margin: 5px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.characters h3 {
+  text-align: center;
+  color: white;
+  font-family: luminari;
+}
+
+/* .flex-container-acotar{
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap:wrap;
+    text-align: justify;
+  } */
+.intro-para {
+  width: 50%;
+  float: left;
+}
+.intro-para p {
+  text-align: left;
+}
+.card-title {
+  text-align: center;
+}
+.card-body {
+  background-color: darkred;
+}
+.card li {
+  background-color: darkred;
+}
+
+.card {
+  color: white;
+  float: right;
+  position: relative;
+}
+
+.contents {
+  width: 50%;
+
+  border: 1px solid red;
+  color: red;
+  background-color: black;
+  float: left;
+}
+
+.contents h4 {
+  text-align: center;
+}
+.contents a {
+  font-size: large;
+}
+
+body {
+  color: white;
+}
+.search {
+  margin: 5px;
+  text-align: center;
+}
+.search-bar {
+  border-radius: 20px;
+  border: 2px solid red;
+  padding: 5px 0;
+  margin: 5px;
+  outline: none;
+  width: 40%;
+  background-color: black;
+  color: red;
+}
+.search ::placeholder {
+  color: red;
+}
+.btn {
+  border-radius: 10px;
+}
+section {
+  margin: 5px;
+  padding: 10px;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.synopsis h2 {
+  color: red;
+  border-bottom: 1px solid red;
+  text-align: left;
+}
+.synopsis {
+  text-align: left;
+  margin: 10px;
+  margin-left: -10px;
+  margin-top: 30px;
+}
+.plot h2 {
+  color: red;
+  border-bottom: 1px solid red;
+  text-align: left;
+}
+.plot {
+  text-align: left;
+  margin: 10px;
+  margin-left: -10px;
+  margin-top: 30px;
+}
+.plot-summary h2 {
+  color: red;
+  border-bottom: 1px solid red;
+  text-align: left;
+}
+.plot-summary {
+  text-align: left;
+  margin: 10px;
+  margin-left: -10px;
+  margin-top: 30px;
+}
+.adaptation h2 {
+  color: red;
+  border-bottom: 1px solid red;
+  text-align: left;
+}
+.adaptation {
+  text-align: left;
+  margin: 10px;
+  margin-left: -10px;
+  margin-top: 30px;
+}
+.trivia h2 {
+  color: red;
+  border-bottom: 1px solid red;
+  text-align: left;
+}
+.trivia {
+  text-align: left;
+  margin: 10px;
+  margin-left: -10px;
+  margin-top: 30px;
+}
+.biography h2 {
+  color: red;
+  border-bottom: 1px solid red;
+  text-align: left;
+}
+.biography {
+  text-align: left;
+  margin: 10px;
+  margin-left: -10px;
+  margin-top: 30px;
+}
+.wrapper p {
+  text-align: left;
+}
+.physical-appear h2 {
+  color: red;
+  border-bottom: 1px solid red;
+  text-align: left;
+}
+.physical-appear {
+  text-align: left;
+  margin: 10px;
+  margin-left: -10px;
+  margin-top: 30px;
+}
+.personality h2 {
+  color: red;
+  border-bottom: 1px solid red;
+  text-align: left;
+}
+.personality {
+  text-align: left;
+  margin: 10px;
+  margin-left: -10px;
+  margin-top: 30px;
+}
+#locations h2 {
+  color: red;
+  text-align: center;
+}
